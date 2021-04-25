@@ -1,0 +1,164 @@
+@font-face {
+	font-family: "Lato"; 
+	src: url(fonts/Lato-Regular.ttf); 
+}
+
+@font-face {
+	font-family: "Roboto"; 
+	src: url(fonts/Roboto.ttf); 
+}
+
+
+@keyframes animation { 
+    0% { 
+   filter: saturate(100%)
+    } 
+    50% { 
+        filter: saturate(300%)
+    } 
+    100% {
+        filter: saturate(100%)
+   }
+}
+
+* {
+    font-family: "Lato";
+    line-height: 1.5em !important; 
+}
+
+h1 {
+    font-size: 2.85rem;
+}
+h4 {
+    font-size: 1.25rem;
+    line-height: 2em !important; 
+}
+
+nav, footer  {
+    background: #3B235A !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+main{
+    background: #20163A;
+}
+.img-fluid {
+    animation: animation 4s ease infinite;
+}
+
+.card {
+    background: #fff;
+    color: #20163A;
+    border: 0
+}
+section {
+    margin: 5%;
+    padding: 5%;
+    background: #3B235A;
+    border-radius: 8px;
+    color: white;
+}
+
+.invert {
+    background: white;
+    color: #3B235A;
+}
+
+p {
+    font-size: 18px;
+}
+
+footer, footer a {
+    color: white;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+.card-img-overlay {
+    margin: 10% !important;
+    margin-left: 50% !important;
+}
+
+.btn-outline-primary {
+    padding: 2vh 5vh;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #693EA0;
+    border-color: #693EA0;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #3B235A;
+    border-color: #3B235A;
+}
+
+.btn-outline-secondary {
+    padding: 2vh 5vh;
+    font-size: 1rem;
+    color: #C464FF;
+    border-color: #C464FF;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #693EA0;
+    border-color: #693EA0;
+}
+
+.btn-outline-secondary.focus, .btn-outline-secondary:focus {
+    box-shadow: 0 0 0 0.2rem #c76aa686;
+}
+
+.round{
+    border-radius: 50%;
+    width: 15vh;
+    border: 3px solid #C464FF;
+}
+
+.img-fluid {
+    width: 40vw;
+    height: 80vh;
+}
+
+.img-small {
+    width: 100%;
+}
+
+.over {
+    overflow: hidden;
+    padding-bottom: 0
+}
+
+#task {
+    position: relative;
+    z-index: 2;
+}
+
+input {
+    border-radius: 8px;
+    border: 1px solid #3B235A;
+    padding: 2vh 5vh;
+    font-size: 1rem;
+}
+@media screen and (max-device-width: 400px) {
+    .img-fluid {
+        width: 100%;
+    }
+    h1 {
+        margin-top: 10vh;
+    }
+    .row {
+display: block !important;
+    }
+    .col-4 {
+        max-width: 100%;
+    }
+
+    .card-img-overlay {
+        margin: 10% !important;
+    }
+   }
